@@ -1,0 +1,1 @@
+This file hello world it about how the gcc processer work and a little about printf and puts
