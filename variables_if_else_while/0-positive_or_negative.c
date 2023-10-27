@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * more headers goes there
+ * 
  * main - Checking if the number is positive or negative
  * 
  * Return: 0 always
