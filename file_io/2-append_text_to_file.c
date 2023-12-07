@@ -11,10 +11,11 @@ int append_text_to_file(const char *filename, char *textcontent)
 
 	if (!filename)
 		return (-1);
-
-
 	if (access(filename, F_OK) == 0)
 		fd = open(filename, O_WRONLY | O_APPEND);
+
+	else
+		fd = open(filename, O_CREAT | O_WRONLY | O_APPEND, 0600);
 	if (!textcontent)
 		return (1);
 	if (write(fd, textcontent, strlen(textcontent)) == -1)
